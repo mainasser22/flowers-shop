@@ -1,0 +1,644 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 3400px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.sec-header {
+    text-align: center;
+    margin: 100px 0px 45px 0px;
+}
+
+.sec-title {
+    /* font: bold 47px 'Moon Dance', cursive; */
+    font: bold 43px 'Dancing Script', cursive;
+    letter-spacing: 0.12rem;
+    margin-bottom: 10px;
+}
+
+.sec-header .line {
+    width: 100px;
+    margin: auto;
+    height: 5px;
+    display: block;
+    background-color: #D67F68;
+    transition: .7s;
+}
+
+.sec-header:hover .line {
+    width: 150px;
+}
+
+/* -------------------------------------------------------------- */
+.navcontainer {
+    width: 80%;
+    margin: auto;
+}
+
+.navbar {
+    width: 100%;
+    height: 90px;
+}
+
+/* .logo {
+    width: 90px;
+    height: 60px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 8px;
+} */
+
+.timag {
+    float: left;
+    font: bold 90px  'Allura', cursive;
+    color: #D67F68;
+    letter-spacing: 0.12rem;
+    margin: 2px 0px 0px 30px;
+    cursor: pointer;
+}
+
+.timag span {
+    color: #4f4f4f;
+}
+
+nav {
+    float: left;
+    margin: 40px 15px 0px 15px;
+}
+
+.navlist {
+    list-style: none;
+}
+
+.navlist li {
+    display: inline-block;
+    margin-left: 14px;
+}
+
+.navlist a {
+    text-decoration: none;
+    color: #4f4f4f;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: block;
+}
+
+.nav-item {
+    font-size: 20px;
+    padding: 10px;
+    position: relative;
+}
+
+.nav-item:hover {
+    color: #db917c;
+}
+
+.ico {
+    font-size: 12px;
+    padding-top: 24px;
+    color: #D67F68;
+}
+
+.ico:hover {
+    color: #141414;
+}
+
+.sublist {
+    position: relative;
+}
+
+.clear-fix::after {
+    content: "";
+    clear: both;
+}
+
+.sublist-con {
+    position: absolute;
+    padding-top: 20px;
+    margin-top: 10px;
+    border: 1px dotted #D67F68;
+    border-radius: 20px;
+    width: 580px;
+    z-index: 1000;
+    background-color: #fcf4f1;
+    transform: scale(0);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.sublist:hover .sublist-con {
+    transform: scale(1);
+    visibility: visible;
+    opacity: 1;
+}
+
+.sublist-con ul {
+    display: table-cell;
+    text-align: left;
+}
+
+.sublist-con ul li {
+    line-height: 2rem;
+    display: block;
+}
+
+.head {
+    border-bottom: 1px dotted #f85123;
+    margin-bottom: 10px;
+}
+
+.sublist-con ul li .ht {
+    color: #8d5141;
+}
+
+/* .nav-item::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height:0;
+    top:0;
+    left:0;
+    box-sizing: border-box;
+    border-right: 2px solid #8d5141;
+    border-left: 2px solid #8d5141;
+    transition: 0.1s;
+}
+.nav-item:hover::after{
+    width: 100%;
+    height:100%;
+}
+.nav-item::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height:100%;
+    top:0;
+    left:0;
+    box-sizing: border-box; 
+    border-top: 2px solid #8d5141;
+    border-bottom: 2px solid #8d5141;
+    transition: .6s;
+}
+.nav-item:hover::before{
+    width: 100%;
+    height:100%;
+} */
+.nav-item::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height:0;
+    top:0;
+    left:0;
+    box-sizing: border-box;
+    border-top: 2px solid #db917c;
+    border-left: 2px solid #db917c;
+    transition: 0.6s;
+    opacity: 0;
+}
+.nav-item:hover::after{
+    width: 100%;
+    height:100%;
+    opacity: 1;
+}
+.nav-item::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height:0;
+    bottom: 0;
+    right:0;
+    box-sizing: border-box; 
+    border-right: 2px solid #db917c;
+    border-bottom: 2px solid #db917c;
+    transition: .6s;
+    opacity: 0;
+}
+.nav-item:hover::before{
+    width: 100%;
+    height:100%;
+    opacity: 1;
+}
+
+/*----------------------------------------------*/
+.homesec {
+    padding: 1.5rem 2% 0px;
+}
+
+.home {
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    border-radius: 20px;
+    background: url(./images/b6.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+.home-content {
+    position: absolute;
+    left: 5%;
+    top: 70%;
+}
+
+.home-title {
+    color: rgb(249, 244, 244);
+    /* font: bold 50px'Moon Dance', cursive; */
+    /* font: bold 40px'Playfair Display', serif; */
+    font: bold 45px 'Dancing Script', cursive;
+    text-transform: capitalize;
+    line-height: 1.1;
+    letter-spacing: 0.12rem;
+}
+
+.home-content .ht {
+    color: #D67F68;
+}
+
+.home-p {
+    color: rgb(77, 75, 75);
+    /* font: 500 20px 'Dancing Script', cursive; */
+    font-size: 20px;
+    letter-spacing: 0.12rem;
+    margin: 10px 0px;
+}
+
+.btn {
+    width: 110px;
+    height: 50px;
+    text-align: center;
+    padding: 15px 0px;
+    margin-left: 10px;
+    border-radius: 50px;
+    border: none;
+    font: bold 15px 'Roboto Slab', serif;
+    color: #fff;
+    background-color: #D67F68;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.btn:hover {
+    background-color: #3a3737;
+    color: #f5f1f1;
+    transform: scale(1.1);
+}
+
+/* ----------------------------------------------------------------- */
+.category-items {
+    overflow: hidden;
+}
+
+.category-item {
+    float: left;
+    margin-left: 20px;
+    position: relative;
+}
+
+.category-items img {
+    width: 280px;
+    height: 400px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.cat-icon {
+    position: absolute;
+    right: 2px;
+    bottom: 0;
+    width: 20px;
+    text-align: center;
+    color: #f2ecea;
+    background-color: #D67F68;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.category-item:hover .cat-icon {
+    visibility: visible;
+    opacity: 1;
+}
+
+.cat-ft {
+    color: #a4a0a0;
+}
+
+.cat-st {
+    color: #4f4f4f;
+}
+
+.about-offers {
+    overflow: hidden;
+    margin: 60px 0px 0px 0px;
+    padding: 20px 0px;
+    height: 400px;
+}
+
+.about {
+    width: 580px;
+    height: 340px;
+    float: left;
+    border-radius: 10px;
+    margin-left: 25px;
+    background-color: #f4e9e5;
+    padding: 20px;
+    position: relative;
+}
+
+.offer-item {
+    width: 275px;
+    height: 340px;
+    border-radius: 10px;
+    float: left;
+    margin-left: 20px;
+    padding: 10px;
+    transition: transform 0.6s;
+}
+
+.offer-itinfo {
+    color: #3a3737;
+    font-family: 'Dancing Script', cursive;
+}
+
+.first {
+    background: url(./images/wedding-reception-1-05142018-km\ -\ MODwedding.jfif) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.second {
+    background: url(./images/Four\ Seasons\ Resort\ Orlando\ Wedding\ _\ Caroline\ &\ Harrison\ —\ Velvet\ &\ Twine.jfif) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.offer-item:hover {
+    transform: scale(1.1);
+}
+
+.dashs {
+    position: absolute;
+    text-align: right;
+    bottom: 20px;
+    right: 20px;
+}
+
+.dashs span {
+    width: 50px;
+    height: 3px;
+    margin-left: 10px;
+    display: inline-block;
+    background-color: #8d6154;
+}
+.about p{
+    font-size: 18px;
+}
+.about-header{
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 60px;
+}
+.abftitle{
+    /* font: bold 35px'Moon Dance', cursive; */
+    font: bold 28px 'Dancing Script', cursive;
+}
+.about-header .abicon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 50px;
+    color:#8d6154;
+}
+/* ------------------------------------------------ */
+.movement {
+    overflow: hidden;
+    margin: 40px 0px 55px 0px;
+}
+
+.movement-item {
+    float: left;
+    width: 243px;
+    text-align: center;
+    border-right: 2px solid #a74e36;
+}
+
+.last {
+    border: 0;
+}
+
+/* .con-hr{
+    width: 100%;
+    color: #D67F68;
+} */
+.movement-info {
+    text-align: center;
+}
+
+.movement-info h3 {
+    font-size: 17px;
+}
+
+.movement-info span {
+    color: gray;
+    font-size: 15px;
+}
+
+.movement-icon {
+    background: url(./images/sprite.jpeg) no-repeat;
+    height: 55px;
+}
+
+.movement-1 {
+    background-position: center 5px;
+    transition: all .5s;
+}
+
+.movement-item:hover .movement-1 {
+    background-position: center -86px;
+}
+
+.movement-2 {
+    background-position: center -180px;
+    transition: all .5s;
+}
+
+.movement-item:hover .movement-2 {
+    background-position: center -273px;
+}
+
+.movement-3 {
+    background-position: center -366px;
+    transition: all .5s;
+}
+
+.movement-item:hover .movement-3 {
+    background-position: center -455px;
+}
+
+.movement-4 {
+    background-position: center -549px;
+    transition: all .5s;
+}
+
+.movement-item:hover .movement-4 {
+    background-position: center -639px;
+}
+
+.movement-5 {
+    background-position: center -734px;
+    transition: all .5s;
+}
+
+.movement-item:hover .movement-5 {
+    background-position: center -826px;
+}
+
+/* ------------------------------------------------------------------------------ */
+/* .prod-cat{
+margin: auto;
+text-align: center;
+margin-top: -15px;
+margin-bottom:30px ;
+}
+.prod-cat ul li{
+     display: inline-block;
+     margin-left: 70px;
+}
+.prod-cat ul{
+    list-style: none;
+    margin-right: 70px;
+}
+.prod-cat a{
+    text-decoration: none;
+    color:#5c5b5b;
+    font-size: 20px;
+}
+.product-items{
+ overflow:hidden;
+}
+.product-item{
+    float: left;
+    margin:0px 40px;
+    position: relative;
+}
+.product-item img{
+    width: 325px;
+    height: 400px;
+    border-radius: 10px;
+}
+.pro-c{
+    background-color: #f0a894;
+} */
+.product-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    opacity: 0.8;
+    transition: transform 0.5s;
+}
+
+.product-overlay ul {
+    list-style: none;
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.product-overlay ul li {
+    text-align: center;
+    display: inline-block;
+    width: 45px;
+    height: 40px;
+    background-color: #f0a894;
+    border-radius: 10px;
+}
+
+.product-item:hover .product-overlay {
+    transform: scalex(1);
+}
+
+.product-overlay ul li i {
+    color: #fff;
+    font-size: 25px;
+    line-height: 40px;
+}
+
+.product-info {
+    margin-top: 10px;
+}
+
+.product-info span {
+    display: block;
+    color: #5c5b5b;
+}
+
+.product-info .active {
+    color: yellow;
+    font-size: 15px;
+}
+
+.f-space {
+    margin-bottom: 20px;
+}
+
+.prod-cat {
+    margin: auto;
+    text-align: center;
+    margin-top: -15px;
+    margin-bottom: 30px;
+}
+
+.prod-cat ul li {
+    display: inline-block;
+    margin-left: 70px;
+}
+
+.prod-cat ul {
+    list-style: none;
+    margin-right: 70px;
+}
+
+.prod-cat a {
+    text-decoration: none;
+    color: #5c5b5b;
+    font-size: 20px;
+}
+
+.product-items {
+    overflow: hidden;
+}
+
+.product-item {
+    float: left;
+    position: relative;
+}
+
+.cen {
+    margin: 0px 120px;
+}
+
+.product-item img {
+    width: 325px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.pro-c {
+    background-color: #f0a894;
+}
